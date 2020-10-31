@@ -1,0 +1,147 @@
+body {
+    font-family: 'source_sans_pro', sans-serif;
+    font-weight: 300;
+    margin:0;
+    background-color: #e5e5e5;
+    
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    color: #48418e; 
+    text-align: center;
+    justify-content: space-between;
+}
+.appka:hover,
+.polozka:hover{
+    background-color: #48418e;
+    color:#e5e5e5;
+}
+
+.appka,
+.polozka {
+    padding: 0.5rem;
+}
+
+.appka {
+    text-transform: uppercase;
+}
+.main {
+    background: rgb(37,19,61);
+    background: linear-gradient(90deg, rgba(37,19,61,1) 30%, rgba(170,84,119,1) 100%);
+    color: #e5e5e5;
+    padding:1.5rem;
+    font-weight: 300;
+}
+.popis {
+    font-weight: 200;
+}
+.main img {
+    display: none;
+}
+.tlacitka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 100%;
+    padding: 1.5rem;
+}
+.stahnout,
+.informace {
+    border-width: 1px;
+    border-color: #e5e5e5;
+    border-bottom-color: #e5e5e5;
+    border-style: solid;
+    border-radius: 5px 5px;
+    padding: 1rem;
+    margin: 0.8rem;
+    box-sizing: inherit;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.stahnout {
+    background-color: #48418e;
+}
+.stahnout:hover {
+    background-color: rgba(0,0,0,0)
+}
+.informace:hover {
+    background-color: #48418e;
+}
+.nadpis {
+    color: #48418e;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.letadlo,
+.bubliny,
+.mapa {
+    width: 70px;
+    position: relative;
+    margin: center;
+}
+.obsah {
+     text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    background-color: #48418e;
+}
+@media screen and (min-width: 760px) {
+    .menu {
+        justify-content: flex-start;
+    }
+    .prvni,
+    .druhy {
+        display: flex;
+        flex-direction: row;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .nazev {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+    .popis {
+        font-size: 3rem;
+    }
+    .tlacitka {
+        display:flex;
+        flex-direction: row;
+        margin-left: -2rem;
+        width: 50%;
+    }
+    .stahnout,
+    .informace {
+        flex-grow: 1;
+        font-size: 1.5rem;
+        width: 50%;
+        
+    }
+    .obsah {
+        display:flex;
+        flex-direction: row;
+ }
+@media screen and (min-width:1200px) {
+    .content {
+        background-color: white;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .main img {
+        display: unset;
+        width: 400px;
+        display: block;
+        position: absolute;
+        margin-left: 765px;
+        margin-top: -19px;
+    }  
+        
+}   
